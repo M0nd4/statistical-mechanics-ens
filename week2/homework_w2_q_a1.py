@@ -24,9 +24,9 @@ for run in range(n_runs):
     [histo_data.append(pos[k][0]) for k in range(N)]
 
 pylab.hist(histo_data, bins=100, normed=True)
-pylab.xlabel('x location')
-pylab.ylabel('frequency (bucketed)')
-pylab.title('Distribution of disks along the x-axis by frequency. Question A1')
+pylab.xlabel('x location (bucketed)')
+pylab.ylabel('frequency')
+pylab.title('Direct-sampling distribution of disks along x-axis by frequency. A1')
 pylab.grid()
 pylab.savefig('direct_disks_histo.png')
 pylab.show()
