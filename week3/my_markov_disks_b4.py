@@ -20,7 +20,7 @@ def show_conf(L, sigma, title, fname):
     pylab.title(title)
     pylab.axis([0.0, 1.0, 0.0, 1.0])
     pylab.savefig(fname)
-    pylab.show()
+    #pylab.show()
  
 N = 64
 eta = 0.42     # density
@@ -55,7 +55,7 @@ for steps in range(n_steps):
         a[:] = b
  
 show_conf(L, sigma,
-          'Disk positions after %i iterations in periodic box. B3' % n_steps,
+          'Disk positions after %i iterations in periodic box. B4' % n_steps,
           'periodic_disks_%i_iterations_b4.png' % n_steps)
  
 f = open(filename, 'w')
