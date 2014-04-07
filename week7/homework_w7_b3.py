@@ -56,7 +56,7 @@ else:
     print 'starting from scratch', filename
  
 start_time = datetime.datetime.now()
-end_time   = start_time + datetime.timedelta(minutes=20)
+end_time   = start_time + datetime.timedelta(minutes=15)
 print 'Finish at:', end_time
 while datetime.datetime.now() < end_time:
 #for step in range(nsteps):
